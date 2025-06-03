@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="description" content="Grounded Gestures: Language, Motion and Space, a Multi-Modal Conversational Dataset for Virtual Humans presented at CVPR Multimodal Agents Workshop.">
+<meta name="keywords" content="Grounded Gestures, humanoid agents, CVPR, AI2-THOR, virtual humans, gesture dataset, human motion">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounded Gestures: Language, Motion and Space</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hover-data:hover {
+            content: 'Soon';
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="text-center py-8 bg-white shadow-md">
+        <h1 class="text-3xl font-bold">Grounded Gestures: Language, Motion and Space</h1>
+        <p class="mt-4 text-lg text-gray-700">Anna Deichler, Jim O'Regan, Teo Guichoux, David Johansson, Jonas Beskow</p>
+        <p class="mt-3 text-gray-600">KTH Royal Institute of Technology</p>
+        <p class="mt-3 text-xl text-gray-600">CVPR Multimodal Agents Workshop</p>
+        <div class="flex flex-col items-center mt-4 space-y-2">
+            <div class="flex flex-wrap justify-center gap-2">
+                <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded">arXiv</button>
+                <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded hover-data">Data</button>
+                <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded">Code</button>
+                <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded">Demo</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Abstract Section -->
+    <section class="py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold">Abstract</h2>
+            <p class="mt-4 text-gray-700">
+                Despite rapid progress in human motion generation, the synthesis of spatially grounded, context-aware gestures remains underexplored. Existing models typically specialize either in descriptive motion generation—such as locomotion and object interaction—or in isolated co-speech gesture synthesis aligned with utterance semantics. However, both lines of work often treat motion and environmental grounding separately, limiting advances toward embodied, communicative agents. In this work, we introduce a new multimodal dataset and framework for situated referential gesture research. We combine two complementary resources: (1) a synthetic dataset of spatially grounded referential gestures, and (2) MM-Conv, a VR-based dataset capturing spontaneous two-party dialogues. Together, they provide over 7.7 hours of synchronized motion, speech, gaze, and 3D scene information, standardized in the HumanML3D format. Our framework further connects to a physics-based simulator, enabling synthetic data generation and situated evaluation. By bridging gesture modeling and spatial grounding, our contribution establishes a foundation for advancing research in situated gesture generation and grounded multimodal interaction.
+            </p>
+        </div>
+    </section>
+
+    <!-- Background Section -->
+    <section class="py-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold">Background</h2>
+            <p class="mt-4 text-gray-700">
+                Situated referential communication — where speech, gesture, and gaze are coordinated to ground meaning in the surrounding environment — is a core aspect of human interaction. It is essential not only for resolving ambiguities and expressing communicative intents clearly in everyday conversation, but also fundamental to pedagogical instruction, development of language skills, and overcoming language barriers. In recent years, there has been a surge in technologies related to the generation of humanoid agents with believable and communicative behaviors. However, generation of spatially grounded, context-aware gestures for these agents remains an underexplored area.
+            </p>
+            <p class="mt-4 text-gray-700">
+                To date, research on motion generation using deep generative models has largely focused on two separate problem domains. One is co-speech gesture generation, which aims to generate believable and semantically plausible gestures that match a verbal message in speech and/or text. These models are trained on large corpora of motion capture or video, conditioned with speech and/or text, typically with no spatial information other than that of the interlocutor (if present). The other class of models are so-called “text-to-motion” models, where natural language prompts are used to drive human behavior. These models are trained on large and diverse datasets of human motion and can also, in some cases, incorporate semantic and geometric information about the scene, allowing instructions like “walk over to the sofa and sit down.” However, these models have no concept of speech and gesture.
+            </p>
+            <p class="mt-4 text-gray-700">
+                In order to build humanoid agents that can function in real-life scenarios, we need models that can integrate spatial information and communicative behavior, including speech and gesture. Progress is constrained by the lack of standardized datasets that combine motion, language, gaze, and 3D scene information in a way that supports both training and evaluation of situated behaviors. Existing datasets often treat gesture generation and environmental grounding separately, limiting advances in embodied, interactive AI systems.
+            </p>
+        </div>
+    </section>
+
+    <!-- Carousel Section (Empty) -->
+    <section class="py-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-center space-x-4">
+                <!-- Images Removed -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.hover-data').addEventListener('mouseenter', function () {
+            this.textContent = 'Soon';
+            this.style.backgroundColor = 'gray';
+            this.style.color = 'white';
+        });
+        document.querySelector('.hover-data').addEventListener('mouseleave', function () {
+            this.textContent = 'Data';
+            this.style.backgroundColor = '';
+            this.style.color = '';
+        });
+    </script>
+</body>
+
+</html>
